@@ -191,9 +191,43 @@
 
 // game of gussing a num
 
-let num = 35;
-let yournum = Number(prompt("enter your number = "));
-while (yournum !== num) {
-    yournum = Number(prompt("wronge num try again :("));
-}
- console.log("***you win***");
+// let num = 35;
+// let yournum = Number(prompt("enter your number = "));
+// while (yournum !== num) {
+//     yournum = Number(prompt("wronge num try again :("));
+// }
+//  console.log("***you win***");
+
+//string
+//string are immutable means cannot change the orignal str
+// sring methords
+//1 str.touppercase() / tolowercase
+//2 str.trim() remove starting and ends white spaces
+//3 str.length for length
+//4 str[] for char
+//5 str.slice(any number) give inbetween index
+//6 str1.concat(str2) or str1 + str2 combines to strings
+//7 str.replace("y","h") replace var console.log(str.replace("y","h"));like this
+// let str = "hello world";
+// console.log(str[0],str[3]);
+// by typing str on browser we get our output and by typing str.length
+//  we get string length. and also str[any num 1,0,9 etc we got char index or position] and get alphabate.
+
+//template literal is a special type string 
+//it is a way to have embbaded experasion\placeholder in string created by backtick (``` this)
+//let specialstring = `this is a \n full sentence \t ${1+2+5}`;// this cal is experasion
+//console.log(specialstring); // \n give nextline and \t tab space they called scape char and by length counted as single char
+// let obj = {
+//     item : "apple",
+//     cost : 50,
+// }
+// console.log("the fruit is an", obj.item , "and price is ", obj.cost);// instead of writing like this like coma and all we use
+// let output = `the fruit is an ${obj.item} and price is ${obj.cost}`;
+// console.log(output);
+
+//quize
+
+// let fullname = prompt ("enter your fullname");
+// let username = "@".concat(fullname);
+
+// console.log(username,fullname.length);
