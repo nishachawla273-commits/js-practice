@@ -1,56 +1,55 @@
-// // console.log("hello world");
+// console.log("hello world");
+// name = ("nisha chawla");
+// console.log(name);
 
-// // name = ("nisha chawla");
-// // console.log(name);
+// //ARTHIMATIC OPERATOR
+// let a = 5;
+// let b = 2;
+// console.log("a+b =",a+b);
+// console.log("a-b =",a-b);
+// console.log("a*b =",a*b);
+// console.log("a/b =",a/b);
+// console.log("a%b =",a%b); //modules give reminder
+// console.log("a**b =",a**b);//exponent val 5^2 = 25
 
-// // //ARTHIMATIC OPERATOR
-// // let a = 5;
-// // let b = 2;
-// // console.log("a+b =",a+b);
-// // console.log("a-b =",a-b);
-// // console.log("a*b =",a*b);
-// // console.log("a/b =",a/b);
-// // console.log("a%b =",a%b); //modules give reminder
-// // console.log("a**b =",a**b);//exponent val 5^2 = 25
+// //UNARY OPT
+// console.log("a =", a , "b = ", b);
+//  a++; // a = 6 now incremental opt, a = a+1 also use . there is a++ is a post inc which change val after and ++a pre inc change val after.
+// console.log("a = ", a);
+// a = a-2;// decrimental. same goes with this a-- and --a. 
+// console.log("a =", a);
 
-// // //UNARY OPT
-// // console.log("a =", a , "b = ", b);
-// //  a++; // a = 6 now incremental opt, a = a+1 also use . there is a++ is a post inc which change val after and ++a pre inc change val after.
-// // console.log("a = ", a);
-// // a = a-2;// decrimental. same goes with this a-- and --a. 
-// // console.log("a =", a);
+// //asigment opt
+// let c = 2;
+// let d = 4;
+// c +=1;
+// d -=2;
+// c *= 2;
+// // same with (/= divid), (%= moduler),(**= expo)
+// console.log("c =", c);// c is 3 now
+// console.log("d =", d); // d is 2
+// console.log("c =", c); // c is 6 bcz now c is 3 and 3^2 =6
 
-// // //asigment opt
-// // let c = 2;
-// // let d = 4;
-// // c +=1;
-// // d -=2;
-// // c *= 2;
-// // // same with (/= divid), (%= moduler),(**= expo)
-// // console.log("c =", c);// c is 3 now
-// // console.log("d =", d); // d is 2
-// // console.log("c =", c); // c is 6 bcz now c is 3 and 3^2 =6
+// //comparision opt
+// let x = 5;
+// let y = "55";
+// //x==y;// is a is equal b 
+// //x!=y;// is not equal
+// //x===y and x!==y it show equals to and data type also
+// // also we have >, >= & <, <=
+// console.log("x==y =", x==y);
+// console.log("x!=y =", x!=y);
+// console.log("x===y =", x===y);
+// console.log("x!==y =", x!==y);
+// console.log("x<y =", x<y);
+// console.log("x>=y =", x>=y);
 
-// // //comparision opt
-// // let x = 5;
-// // let y = "55";
-// // //x==y;// is a is equal b 
-// // //x!=y;// is not equal
-// // //x===y and x!==y it show equals to and data type also
-// // // also we have >, >= & <, <=
-// // console.log("x==y =", x==y);
-// // console.log("x!=y =", x!=y);
-// // console.log("x===y =", x===y);
-// // console.log("x!==y =", x!==y);
-// // console.log("x<y =", x<y);
-// // console.log("x>=y =", x>=y);
-
-// // //logical opt
-// // let s = "yes";
-// // let n = "no";
-// // console.log("s say to n =", s&&n);
-// // console.log("s say to n =", s||n);
-// // console.log("s say to n =", !(s&&n)); // yeah ulta karta hai 
+// //logical opt
+// let s = "yes";
+// let n = "no";
+// console.log("s say to n =", s&&n);
+// console.log("s say to n =", s||n);
+// console.log("s say to n =", !(s&&n)); // yeah ulta karta hai 
 
 // // // conditional statments
 // // //if and else
@@ -231,3 +230,76 @@
 // let username = "@".concat(fullname);
 
 // console.log(username,fullname.length);
+
+//Array are collection of items
+//    let fruits = ["apple","orange","tomatto","strawberries"];
+//    console.log(fruits);
+//    console.log("lenght of array =",fruits.length);
+
+   // arrays are mutable we can change the orignal val arroding to us by index 
+   // like fruits [3]="mango" now by printing fruit we get mango rather than stawbbery.
+
+// array print vertical item by for-loop
+    // let fruits = ["apple","orange","tomatto","strawberries"];
+    // for (let i = 0; i < fruits.length; i++){
+    //       console.log(fruits[i]);
+    // }
+// for-of loop
+    // for(let item of fruits){
+    //     console.log(item.toUpperCase());
+    // }
+
+// write avg salary of employee
+    // let salary = [10000,5000,15000,20000,18000];
+    // let sum = 0;
+    // for(let total of salary){
+    //     sum += total;
+    // }
+    // let avg = sum / salary.length; 
+    // console.log(`average salary of employees is = ${avg}`);
+/*
+// all item have offer of 10% off change the array to store final price after applying offer?
+let item = [250, 300, 200, 150, 290];
+// let idx = 0;
+// for(let val of item){
+//     console.log(`val at index ${idx} = ${val}`);
+//     let offer = val / 10;
+//     item[idx] = item[idx] - offer;
+//     console.log(`val after order ${item[idx]}`);
+//     idx++;
+// }   
+
+// more simple way with for loop
+
+for(let i = 0; i<item.length;i++){
+    let offer = item[i] / 10;
+    item[i] -= offer;
+}
+console.log(`item after offer = ${item}`);
+*/
+// methords of array
+
+// let name = ["nisha", "hina", "nouma", "paras"];
+// let name2 =["haniya","pooja"];
+// let combine = name.concat(name2);// combine 2 array
+// console.log(combine);
+// name.push("alina");// add in the end
+// name.pop("hina"); // delt in the end
+// name.unshift("sunny");// add item in start
+// name.shift("");// delt the start word
+// console.log(name.slice(1,3));// returns a pice of array or return between val didn't change in origbal array
+// // splice use to (startpoint, delcount, endpoint)
+// console.log(name.splice(1,0,"hello"));// element add
+// console.log(name.splice(2,1));// element delt /delt wala val bhi return hoga phir orignal array change hokar i ga.
+// console.log(name.splice(0,1,"hazal"));// element replace / nisha replaced by hazal
+// console.log(name);
+// console.log(name.toString());// tostring convert array into string
+
+// practice ques:
+
+// let companies = ["bloomberg", "microsoft","uber","gooogle","IBM","netflix"];
+// console.log(companies.shift());
+// console.log(companies.splice(1,1,"ola"));
+// companies.push("amazon");
+// console.log(companies);
+    
